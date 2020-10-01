@@ -1,0 +1,141 @@
+{% extends "../base.html" %}
+{% load static %}
+
+{% block body %}
+    <!-- nav-bar  -->
+    <section id="nav-bar" class="container">
+      <header class="nav-bar">
+        <div class="brand"><a href="#hero"><h1>Invalid SB</h1></a></div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="./blogs">Blog</a></li>
+            <li><a href="./contact">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+    </section>
+    <!-- End nav-bar  -->
+    <!-- Hero Section  -->
+    <section id="hero" class="hero container">
+        <div class="hero-info">
+        <h1 class="hero-main-heading">I Can Design <br><span>Your Dream Website<span></h1>
+          <h4 class="subheading">I am <span class="type"></span></h4>
+          <a href="#about" type="button" class="hero-info-button">Know More</a>
+        </div>
+        <div class="hero-img">
+          <img class="" src="{% static 'core/WFH_svg/wfh_2.svg' %}"/>
+        </div>
+      </section>
+      <div class="line"></div>
+      <!-- End Hero Section  -->
+      <!-- About section  -->
+      <section id="about" class="about container">
+        <div class="about-info" data-aos="fade-in">
+            <h2 class="about-info-heading">About Me</h2>
+            <p class="about-info-desc">{{about.description}}</p>
+            <a href="#" type="button" class="about-info-button">Download Resume</a>
+        </div>
+        <div class="about-img ptwo">
+            <div class="about-img-wrapper">
+                <img src="{{about.image.url}}" alt="Image Couldnot Reachable">
+            </div>
+        </div>
+    </section>
+
+      <div class="line"></div>
+      <!-- End About section  -->
+      <!-- Service Section  -->
+      <div id="services" class="services container">
+        <div class="service-center">
+          <h2 class="service-heading">Services</h2>
+          <div class="row" data-aos="fade-down" data-aos-offset="200">
+            {% for ser in services %}
+            <div class="one" data-aos="zoom-in-down" data-aos-offset="250"    data-aos-easing="ease-in-out" delay="2000">
+              <img src="{{ser.image.url}}">
+              <div class="downtext">
+                <h2>{{ser.name}}</h2>
+              </div>
+            </div>
+            {% endfor %}
+           
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <!-- End Service Section  -->
+      <!-- works Section  -->
+      <section id="works" class="works container">
+        <div class="works-center">
+          <h2 class="works-heading">Some selected Works</h2>
+          <div class="column">
+            {% for work in works %}
+            <div class="workone">
+              <div class="oneside">
+                <div class="oneside-center">
+                  <h6>{{ work.title }}</h6>
+                  <p>{{ work.description}}</p>
+                  <a href="{{work.link}}" type="button" class="work-button">Read More</a>
+                  
+                </div>
+              </div>
+              <div class="anotherside" data-aos="zoom-in"data-aos-offset="80">
+                <div class="anotherside-center">
+                  <img src="{{work.image.url}}">
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            <!-- <div class="worktwo">
+              <div class="oneside">
+                <div class="oneside-center">
+                  <h6>Web-Application for Xyz company</h6>
+                  <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate .</p>
+                  <a href="#" type="button" class="work-button">Read More</a>
+                  
+                </div>
+                
+              </div>
+              <div class="anotherside"data-aos="zoom-in">
+                <div class="anotherside-center">
+                  <img src="https://t3.ftcdn.net/jpg/02/47/17/66/240_F_247176662_Idt24ArsqOgBlFW8eFs6tPe4Iyb7ZZ6h.jpg">
+                </div>
+                
+              </div>
+            </div>
+            <div class="workthree">
+              <div class="oneside">
+                <div class="oneside-center">
+                  <h6>Web-Application for Xyz company</h6>
+                  <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
+                  <a href="#" type="button" class="work-button">Read More</a>
+                </div>
+                
+              </div>
+              <div class="anotherside"data-aos="zoom-in">
+                <div class="anotherside-center">
+                  <img src="https://t3.ftcdn.net/jpg/03/32/76/48/240_F_332764841_CfcVArwsOWyu94cEbdYjVpcEOO89imNl.jpg">
+                </div>
+                 -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="line"></div>
+        <!-- End works Section  -->
+        <!-- Hire Section  -->
+        <section id="hire" class="hire container">
+          <h1 class="hire-heading">Hire me to build your dream website......</h1>
+          <a href="#" type="button" class="hire-button" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">Hire Me</a>
+        </section>
+        <div class="line"></div>
+        <!-- End Hire Section  -->
+
+        {% endblock body %}

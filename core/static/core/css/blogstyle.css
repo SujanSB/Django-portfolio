@@ -1,0 +1,13 @@
+.blog{
+    margin:120px auto;
+    background-color: beige;
+}
+.inner-blog{
+    margin: 30px auto;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.inner-blog h1{
+    font-size: 100px;
+}

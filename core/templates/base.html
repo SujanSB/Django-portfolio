@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujan Bhattarai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/contact_style.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/blogstyle.css' %}">
+  </head>
+  <body>
+
+    {% block body %}
+    {% endblock body %}
+
+
+        <!-- Footer section  -->
+        <footer id="footer" class="footer container">
+          <div class="footer-contact">
+            <h1 class="footer-contact-heading">Get connected with me</h1>
+            <p class="footer-contact-info">Email: sujibh18@gmail.com</p>
+            <p class="footer-contact-info">Mobile: +977-9865005564</p>
+          </div>
+          <div class="footer-social-follow">
+            <h2 class="footer-social-follow-heading">Find Me On <i class="fa fa-arrow-down"></i></h2>
+            <hr>
+            <div class="footer-social-icon">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </footer>
+        <h1 class="copyright">2020 &copy; Sujan Bhattarai</h1>
+        <!-- End Footer section  -->
+        <script src="{% static 'core/main.js' %}"></script>
+        <script src="{% static 'core/typed.js' %}"></script>
+       
+         <script >
+            var typed = new Typed('.type', {
+                strings: ['Sujan Bhattarai','A Web Developer', 'A Comp. Engineer','A Coder'],
+                typeSpeed :60,
+                backSpeed :60,
+                loop :true,
+            });
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({once:"true"});
+  </script>
+
+
+
+
+      </body>
+    </html>

@@ -1,0 +1,78 @@
+
+/* contact section ko Start */
+
+.content{
+	position: relative;
+	margin-top: 100px;
+
+}
+
+.contact-section-page{
+	
+	margin:80px 0px ;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.212);
+	padding: 3rem 2rem;
+  }
+  
+  .contact-inner-width{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .contact-section-page h1{
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  
+  .name,.email,.message{
+    background: none;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: rgb(7, 7, 7);
+    padding: 10px 6px;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  
+  .name{
+    float: left;
+    width: 290px;
+  }
+  
+  .email{
+    float: right;
+    width: 290px;
+  }
+  
+  .message{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  
+  .contact-section-page button{
+    background: cyan;
+    color: #0c0c0c;
+    border: 1px solid #f6f7f8;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.4s linear;
+    cursor: pointer;
+  }
+  
+  .contact-section-page button:hover{
+    background: #0a0a0a;
+    color: #fff;
+  }
+  
+  
+/* contact section ko End */
