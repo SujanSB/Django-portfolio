@@ -49,9 +49,8 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgb(0,0,23);
 	z-index: 200;
-
+	
 
 }
 .nav-bar .nav-list .hamburger {
