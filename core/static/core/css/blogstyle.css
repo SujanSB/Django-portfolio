@@ -1,38 +1,144 @@
 .blog{
-    width: 80%;
+    width: 90%;
     margin:100px auto;
-    background-color: beige;
 }
 .inner-blog{
-    margin: 30px auto;
+    margin: 50px auto;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-.inner-blog .blog-Topbar
-{
-display: flex;
-justify-content: space-between;
+
+
+
+/* try yaha bata */
+
+
+.header {
+    padding: 30px;
+    margin: 60px 0px 0px 0px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  .row{
+      margin:60px auto;
+  }
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .blog-img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin:30px 0px;
+  }
+  .blog-img img{
+    height:200px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  .card  .blog-topPart h2{
+      font-size: 35px;
+  }
+  .card  .blog-topPart h3{
+      font-size: 25px;
+  }
+  .card .blog-lowpart{
+      margin:30px 0px;
+  }
+  .card p{
+      font-size: 20px;
+  }
+  .card a{
+    padding: 1.4rem 2.4rem;
+	display: inline-block;
+	background-color: rgb(248, 150, 2);
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .2rem;
+	margin-top: 10px;
+	color: whitesmoke;
+	transition: .3s ease background-color;
+  }
+  .card  .blog-topPart span{
+      font-size: 15px;
+      background-color: cornflowerblue;
+      padding: 10px 20px;
+  }
+  .card .blog-topPart{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.rightcolumn .card h2{
+    font-size: 30px;
+    text-transform: uppercase;
 
 }
-.perticular-blog{
-    background-color: burlywood;
+.rightcolumn .blog-abt-img{
+    align-content: center;
+    justify-content: center;
 }
-.inner-blog h1{
-    font-size: 60px;
+.rightcolumn img{
+    height:300px;
+     width: 300px;
 }
-.inner-blog h2{
-    font-size: 25px;
-    font-family: poppins;
+
+.Follow-on-other-platform{
+    margin:60px 0px
 }
-.inner-blog p{
+.follow-head{
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
+    font-size: 30px;
+}
+.Follow-on-other-platform h2,h3,p{
     font-size: 20px;
+    margin-bottom: 10px;
+}
+.Follow-on-other-platform a{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.Follow-on-other-platform div{
+    margin-bottom: 30px;
 }
 
 
 
-
-
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
 
 
 

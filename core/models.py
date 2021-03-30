@@ -38,14 +38,15 @@ class blogHaru(models.Model):
 	blog_category = [
 		('Programming', 'Programming'),
 		('Travel', 'Travel'),
-		('Education', 'Education'),
+		('Techlology', 'Techlology'),
+		('Motivation', 'Motivation'),
 		('Others', 'Others')
 	]
 	category = models.CharField(max_length=15, choices=blog_category)
 	title = models.CharField(max_length=200)
 	# subtitle = models.CharField(max_length=200)
 	description=models.TextField()
-	# thumbnail = models.ImageField(upload_to='blog_thumbnails', default='blog_thumbnails/blog.jpg')
+	thumbnail = models.ImageField(upload_to='blog_thumbnails')
 	date_posted = models.DateTimeField(default=timezone.now)
 
 	def __str__(self):
