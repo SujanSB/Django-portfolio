@@ -1,13 +1,50 @@
 .blog{
-    margin:120px auto;
+    width: 80%;
+    margin:100px auto;
     background-color: beige;
 }
 .inner-blog{
     margin: 30px auto;
-    width: 40%;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
-.inner-blog h1{
-    font-size: 100px;
+.inner-blog .blog-Topbar
+{
+display: flex;
+justify-content: space-between;
+
 }
+.perticular-blog{
+    background-color: burlywood;
+}
+.inner-blog h1{
+    font-size: 60px;
+}
+.inner-blog h2{
+    font-size: 25px;
+    font-family: poppins;
+}
+.inner-blog p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* yo chainxa */

@@ -1,34 +1,161 @@
-{% extends "../base.html" %}
-{% load static %}
-{% block body %}
-    <!-- nav-bar  -->
-    <section id="nav-bar" class="container">
-      <header class="nav-bar">
-        <div class="brand"><a href="./index"><h1>Invalid SB</h1></a></div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="./blogs">BLog</a></li>
-          </ul>
-        </div>
-      </header>
-    </section>
-    <!-- End nav-bar  -->
-      <section class="content"> 
-        <div class="contact-section-page">
-          <div class="contact-inner-width">
-            <h1>Get in touch with me</h1>
-            <form method="POST">
+{% extends "../base.html" %} {% load static %} {% block body %}
+<!-- nav-bar  -->
+<section id="nav-bar" class="container">
+  <header class="nav-bar">
+    <div class="brand">
+      <a href="/"><h1>Invalid SB</h1></a>
+    </div>
+    <div class="nav-list">
+      <div class="hamburger">
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./blogs">BLog</a></li>
+      </ul>
+    </div>
+  </header>
+</section>
+<!-- End nav-bar  -->
+<section class="content">
+  <div class="contact-section-page">
+    <div class="contact-inner-width">
+      <h1>Say Some Words</h1>
+            <form method="POST" action="#">
+              {% csrf_token %}
               <input type="text" name="name" class="name" placeholder="Your Name" />
               <input type="email" name="email" class="email" placeholder="Your Email" />
               <textarea rows="1" placeholder="Message" name="message" class="message"></textarea>
-              <button>Get in touch</button>
-            </form>
-          </div>
-        </div>
-    </section>
+            <a  type="button" class="about-info-button">Send</a>
 
-    {% endblock body %}
+            </form>
+
+      <!-- <div class="contact-wrapper"> -->
+        <!---------------- 
+
+    CONTACT PAGE LEFT 
+  
+    ----------------->
+<!-- 
+        <form id="contact-form" class="form-horizontal" role="form">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NAME"
+                name="name"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="EMAIL"
+                name="email"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <textarea
+            class="form-control"
+            rows="10"
+            placeholder="MESSAGE"
+            name="message"
+            required
+          ></textarea>
+
+          <button
+            class="btn btn-primary send-button"
+            id="submit"
+            type="submit"
+            value="SEND"
+          >
+            <div class="button">
+              <i class="fa fa-paper-plane"></i
+              ><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form> -->
+
+        <!---------------- 
+
+    CONTACT PAGE RIGHT 
+  
+    ----------------->
+<!-- 
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fa fa-map-marker fa-2x"
+                ><span class="contact-text place">City, State</span></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-phone fa-2x"
+                ><span class="contact-text phone"
+                  ><a href="tel:1-212-555-5555" title="Give me a call"
+                    >(212) 555-2368</a
+                  ></span
+                ></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-envelope fa-2x"
+                ><span class="contact-text gmail"
+                  ><a href="mailto:#" title="Send me an email"
+                    >emailme@gmail.com</a
+                  ></span
+                ></i
+              >
+            </li>
+          </ul>
+
+          <hr />
+          <ul class="social-media-list">
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-codepen" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+          <hr />
+
+          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        </div>
+     
+     
+      -->
+      
+    </div>
+    
+  </div>
+</section>
+
+{% endblock body %}

@@ -20,9 +20,18 @@
      <!-- Blog section start -->
 <section class="blog">
     <div class="inner-blog">
-        <h1>Blogs are Coming Soon .</h1>
+        {% for blog in blogs %}
+
+      <div class="perticular-blog">
+          <h3>Category:- {{blog.category}}</h3>
+        <div class="blog-Topbar"> <h2>{{blog.id}} </h2>{{blog.date_posted}}</h2></div>
+        <h1>{{blog.title}}</h1>
+        <p>{{blog.description}}</p>
+        {% endfor %}
+      </div>
     </div>
 </section>
+
 
 
      <!-- Blog section end -->
