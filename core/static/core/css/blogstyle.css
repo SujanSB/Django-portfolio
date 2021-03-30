@@ -127,6 +127,8 @@
 .rightcolumn img{
     height:350px;
      width: 300px;
+     border-radius: 50% 70% 40% 20%/45% 80% 90%;
+     box-shadow: 0 0 20px black;
 }
 
 .Follow-on-other-platform{
