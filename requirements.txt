@@ -42,6 +42,7 @@ oauthlib==3.1.0
 olefile==0.46
 packaging==20.3
 paramiko==2.6.0
+pbr==5.5.1
 pexpect==4.6.0
 Pillow==7.0.0
 protobuf==3.6.1
@@ -71,6 +72,7 @@ sip==4.19.21
 six==1.14.0
 sqlparse==0.2.4
 systemd-python==234
+testresources==2.0.1
 ttystatus==0.38
 ubuntu-advantage-tools==20.3
 ubuntu-drivers-common==0.0.0
