@@ -312,9 +312,8 @@ font-size: 3rem;
 }
 .service-center .row{
 display: flex;
-width: 90%;
-margin: auto;
-padding-left: 100px;
+width: 100%;
+margin: 60px auto;
 justify-content: space-between;
 }
 .service-center .row img{
