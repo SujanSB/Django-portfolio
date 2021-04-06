@@ -313,6 +313,8 @@ font-size: 3rem;
 .service-center .row{
 display: flex;
 width: 100%;
+align-items: center;
+
 margin: 60px auto;
 justify-content: space-between;
 }
@@ -323,13 +325,13 @@ padding:10px 10px 0px 10px;
 border-radius: 5px;
 }
 .service-center .row .one,.two,.third{
-width:350px;
+width:340px;
 height: 290px;
 box-shadow: 0 0 5px;
 border-radius: 10px;
 }
 .service-center .row .one:hover,.two:hover,.third:hover{
-width:350px;
+width:340px;
 box-shadow:0 0 20px rgb(0,0,0);
 }
 .service-center .row .downtext{
