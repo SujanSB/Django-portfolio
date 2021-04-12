@@ -24,7 +24,7 @@ SECRET_KEY = '19mktwv=xu(b1pir&&7_l#$llgykt-b5h2#_$ic4+wir11#9zd'
 # SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'sujansb.herokuapp.com/']
 
@@ -123,12 +123,8 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-if DEBUG:
-   STATICFILES_DIRS = [
-   os.path.join(BASE_DIR, 'static'),
-   ]
-else:
-   STATIC_ROOT = os.path.join(BASE_DIR,'static')
-
-MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+MEDIA_URL='/media/'
+MEDIA_ROOT =os.path.join(BASE_DIR,"media")
